@@ -28,7 +28,6 @@ public class Tweet implements Comparable<Tweet> {
     public void setKutup() throws FileNotFoundException {
         //Tweet objesinin Kutup değerini bulan method.
         try {
-            
 
             double sum = 0;
             String[] splited = yorum.split(" ");//yorumu kelimelere ayırmak
@@ -55,9 +54,8 @@ public class Tweet implements Comparable<Tweet> {
                             System.out.println(skor);
                             sum += skor;
                             System.out.println("**burda**");
-                            System.out.println("Sum "+sum);
+                            System.out.println("Sum " + sum);
                             System.out.println("**burda**");
-
 
                         } else {
                             UrunEkle.Error("Bir double parse edilemedi.");
