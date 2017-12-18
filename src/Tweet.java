@@ -28,12 +28,13 @@ public class Tweet implements Comparable<Tweet> {
     public void setKutup() throws FileNotFoundException {
         //Tweet objesinin Kutup değerini bulan method.
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/senticnet4.txt"));//senticNet dosyası okumak için 
+            
 
             double sum = 0;
             String[] splited = yorum.split(" ");//yorumu kelimelere ayırmak
 
             for (int i = 0; i < splited.length; i++) {//her kelimeyi arıyor.
+                BufferedReader br = new BufferedReader(new FileReader("src/senticnet4.txt"));//senticNet dosyası okumak için 
                 //System.out.println(splited[i]);
                 String line = br.readLine();//senticnet dosyasındaki kelimelere bakıyor
                 while (line != null) {
